@@ -1,0 +1,75 @@
+.container {
+	margin: 20px auto;
+	padding: 0 15px;
+}
+
+.controls {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.sort-buttons button {
+	padding: 8px 16px;
+	margin: 0 5px;
+	cursor: pointer;
+	background-color: #f0f0f0;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.sort-buttons button:hover {
+	background-color: #e0e0e0;
+}
+
+.checkbox-filter {
+	margin: 10px 0;
+}
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 6px;
+}
+
+.product-card {
+	border: 1px solid #eee;
+	padding: 8px;
+	border-radius: 5px;
+	background-color: white;
+	text-align: center;
+}
+
+.product-card img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.product-info {
+	/* flex kaldırıldı, çünkü artık sütun düzeni yok */
+}
+
+.product-name {
+	margin: 0 0 6px 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.product-price {
+	margin: 0;
+	color: #050505;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.product-basic {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+.loading {
+	text-align: center;
+	padding: 12px;
+	grid-column: 1 / -1;
+}

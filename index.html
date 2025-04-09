@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="sort-buttons">
+                <button onclick="sortProducts('price', 'asc')">Price ↑</button>
+                <button onclick="sortProducts('price', 'desc')">Price ↓</button>
+                <button onclick="sortProducts('name', 'asc')">Name A-Z</button>
+                <button onclick="sortProducts('name', 'desc')">Name Z-A</button>
+            </div>
+            <div class="checkbox-filter">
+                <label>
+                    <input type="checkbox" id="hideNonFood" onchange="toggleNonFood()">
+                    Hide non-food items
+                </label>
+            </div>
+        </div>
+        <div id="productGrid" class="product-grid">
+            <div class="loading">Loading products...</div>
+        </div>
+    </div>
+	<script src="script.js"></script>
+
+</body>
+</html>
